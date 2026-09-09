@@ -1,16 +1,16 @@
 :root {
   color-scheme: light;
-  --bg: #f3f6fb;
-  --bg-strong: #061a3f;
-  --card: rgba(255, 255, 255, 0.86);
-  --card-solid: #ffffff;
-  --ink: #0c1830;
-  --muted: #5d6980;
-  --line: rgba(18, 33, 64, 0.12);
-  --accent: #ff1478;
-  --accent-dark: #c9005f;
-  --blue: #0e61ff;
-  --shadow: 0 24px 70px rgba(16, 34, 68, 0.16);
+  --bg: #001438;
+  --bg-strong: #001a4d;
+  --card: rgba(12, 27, 135, 0.34);
+  --card-solid: #061f59;
+  --ink: #ffffff;
+  --muted: #b8c9e6;
+  --line: rgba(255, 255, 255, 0.16);
+  --accent: #e4006d;
+  --accent-dark: #a90052;
+  --blue: #2d71d9;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.30);
   --radius: 28px;
   font-family: ui-rounded, "Avenir Next", Avenir, "SF Pro Rounded", "Helvetica Neue", sans-serif;
 }
@@ -24,9 +24,9 @@ body {
   min-height: 100vh;
   color: var(--ink);
   background:
-    radial-gradient(circle at 16% 12%, rgba(255, 20, 120, 0.20), transparent 26rem),
-    radial-gradient(circle at 88% 0%, rgba(14, 97, 255, 0.20), transparent 30rem),
-    linear-gradient(145deg, #ffffff 0%, var(--bg) 48%, #e8eef9 100%);
+    radial-gradient(circle at 18% 12%, rgba(228, 0, 109, 0.28), transparent 25rem),
+    radial-gradient(circle at 85% 0%, rgba(45, 113, 217, 0.30), transparent 31rem),
+    linear-gradient(145deg, #0d4ab8 0%, #06245c 34%, var(--bg) 72%, #000a1a 100%);
   font-size: 18px;
   line-height: 1.65;
 }
@@ -61,6 +61,9 @@ a:hover {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: var(--ink);
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -74,14 +77,14 @@ a:hover {
 .nav-links a {
   padding: 8px 14px;
   border-radius: 999px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 15px;
   font-weight: 700;
 }
 
 .nav-links a[aria-current="page"] {
-  color: var(--ink);
-  background: rgba(12, 24, 48, 0.08);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.13);
 }
 
 .hero {
@@ -91,7 +94,7 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(6, 26, 63, 0.95), rgba(10, 44, 104, 0.92)),
+    linear-gradient(135deg, rgba(0, 20, 56, 0.96), rgba(12, 27, 135, 0.84)),
     var(--bg-strong);
   box-shadow: var(--shadow);
   color: #ffffff;
@@ -111,6 +114,17 @@ a:hover {
   padding: clamp(30px, 6vw, 58px);
 }
 
+.hero-icon {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: clamp(86px, 13vw, 132px);
+  height: clamp(86px, 13vw, 132px);
+  margin-bottom: 28px;
+  border-radius: 27px;
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.34), 0 0 34px rgba(228, 0, 109, 0.22);
+}
+
 .eyebrow {
   margin: 0 0 14px;
   color: #ff9cca;
@@ -122,6 +136,8 @@ a:hover {
 
 h1,
 h2 {
+  position: relative;
+  z-index: 1;
   margin: 0;
   line-height: 1.08;
   letter-spacing: -0.045em;
@@ -137,6 +153,8 @@ h2 {
 }
 
 p {
+  position: relative;
+  z-index: 1;
   margin: 14px 0 0;
 }
 
@@ -192,7 +210,8 @@ p {
 .panel {
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: var(--card);
+  background: linear-gradient(135deg, rgba(12, 27, 135, 0.40), rgba(0, 20, 56, 0.54));
+  backdrop-filter: blur(18px);
   box-shadow: 0 16px 46px rgba(16, 34, 68, 0.08);
 }
 
@@ -217,7 +236,7 @@ p {
 .card-kicker {
   display: inline-block;
   margin-bottom: 18px;
-  color: var(--accent-dark);
+  color: #ff9cca;
   font-size: 13px;
   font-weight: 850;
   letter-spacing: 0.12em;
@@ -234,7 +253,7 @@ p {
 }
 
 .panel.muted {
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(0, 10, 26, 0.38);
 }
 
 .footer {
@@ -270,4 +289,8 @@ p {
   .button {
     width: 100%;
   }
+}
+.brand img {
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
