@@ -22,35 +22,70 @@
         <img class="hero-icon" src="assets/app-icon.png" alt="" width="112" height="112">
         <p class="eyebrow">Privacy Policy</p>
         <h1>How Channel Launcher handles data.</h1>
-        <p class="lede">Channel Launcher is a TV guide app for Android TV, Fire TV, and Apple TV. This policy explains what data the app stores, sends, and uses.</p>
-        <p class="meta"><strong>Effective date:</strong> 6 September 2026</p>
+        <p class="lede">Channel Launcher is a TV guide and Watchlist app for iPhone, iPad, Apple TV, Android TV, Google TV, and Fire TV. This policy explains what data the app stores, sends, and uses.</p>
+        <p class="meta"><strong>Last updated:</strong> 1 November 2026</p>
       </header>
 
       <section class="panel">
         <h2>No accounts</h2>
-        <p>Channel Launcher does not require or offer sign-in, registration, or a user account. Nothing you enter is tied to your name, email address, or identity.</p>
+        <p>Channel Launcher does not require a Channel Launcher account. Optional services can use device or installation identifiers, as explained below; not having an account does not mean that all data is anonymous. Broadcaster apps may require their own accounts.</p>
       </section>
 
       <section class="panel">
         <h2>Settings stored on your device</h2>
-        <p>Channel favourites, hidden channels, channel order, theme, region, clock format, and similar preferences are stored locally on your device. This data does not leave your device unless you enable optional sync.</p>
+        <p>Channel favourites, hidden channels, channel order, Watchlist entries, reminder rules, theme, region, clock format, and similar preferences are stored on your device. Selected preferences and Watchlist data may leave your device if you enable optional sync. Your analytics and crash-reporting choices are stored separately and are not shared through Device Sync.</p>
       </section>
 
       <section class="panel">
         <h2>Optional cross-device settings sync</h2>
-        <p>If you choose to link devices, the app generates random link and device identifiers and stores your selected settings in Supabase, a third-party database provider. The app also stores the device name and platform so linked devices can be identified in the Linked Devices list.</p>
+        <p>If you choose to link devices, the app generates random link and device identifiers and stores your selected settings and Watchlist data in Supabase, a third-party database provider. The app also stores the device name and platform so linked devices can be identified in the Linked Devices list.</p>
         <p>Sync is optional and off by default. You can unlink a device at any time. We do not sell this data, use it for advertising, or share it except with Supabase acting as our storage provider.</p>
       </section>
 
       <section class="panel">
-        <h2>Analytics and remote configuration</h2>
-        <p>Channel Launcher uses Firebase Remote Config to deliver app configuration and Firebase Analytics to understand app usage, such as which channels users try to open and which platform is being used.</p>
-        <p>Channel Launcher does not use advertising identifiers, advertising networks, or cross-app tracking.</p>
+        <h2>Optional usage analytics</h2>
+        <p>In app versions with <strong>Privacy choices</strong>, usage analytics is off by default. We ask for your consent before enabling optional Google Analytics for Firebase collection. You can use all app features without agreeing. Leaving the control off, closing a screen, or continuing to use the app does not give consent.</p>
+        <p>If you enable usage analytics, Google processes app-interaction events such as screens visited, channels and providers selected, launch results, and settings actions, together with app version, operating-system and device information, timestamps, and analytics installation identifiers. We use this information to understand usage and improve reliability and navigation. We do not intentionally send search-query text, your device's personal name, email address, or raw deep-link URLs as analytics event parameters.</p>
+        <p>Advertising consent remains disabled. We do not use this analytics feature for personalised advertising or cross-app advertising tracking. A remote configuration setting may turn analytics off, but cannot override your refusal or grant consent on your behalf.</p>
       </section>
 
       <section class="panel">
-        <h2>TV listings data</h2>
-        <p>Programme schedules shown in the app are broadcast schedule information from TV listings providers and are not personal data about you.</p>
+        <h2>Optional crash reports</h2>
+        <p>Google Firebase Crashlytics reporting has a separate consent control and is also off by default in versions with Privacy choices. You do not have to enable analytics to enable crash reporting, or enable either to use the app.</p>
+        <p>If you enable crash reports, Google processes technical crash traces, app and operating-system versions, device information, crash/installation identifiers, and diagnostic context such as the screen, channel, or launch route involved. We use these reports to diagnose and fix faults. We do not intentionally attach your account credentials or search-query text.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Changing your privacy choices</h2>
+        <p>Open <strong>Settings &gt; Privacy choices</strong> inside Channel Launcher. On iPhone and iPad the entry is in the About section of Settings; on TV it is a Settings menu entry. Usage analytics and crash reports have independent controls. You can decline or withdraw either choice at any time without losing access to app features.</p>
+        <p>Withdrawing analytics consent stops future collection by the app and resets locally cached analytics data. When crash reporting is off, the app disables report uploads and requests deletion of unsent reports. Withdrawal does not automatically delete information already sent to Google, or make earlier processing unlawful. Contact us about deletion requests using the details below.</p>
+        <p>These controls are being introduced in updated app versions. Earlier versions may collect usage analytics and crash reports without offering these controls. Update to a version containing Privacy choices to manage them. We do not claim that older app versions have the new default-off behaviour.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Configuration, listings, and notifications</h2>
+        <p>Firebase Remote Config delivers configuration such as supported app links and update requirements. It uses Firebase installation identifiers to retrieve configuration. These requests are separate from optional usage analytics and are not switched off by declining analytics.</p>
+        <p>TV listings and catch-up services receive network requests needed to load schedules, artwork, and programme availability. As with other online services, providers can receive technical connection information such as your IP address. Programme listings themselves are information about broadcasts, not a record of what you have watched.</p>
+        <p>If you enable supported reminder notifications, the app may use Apple notification services, Firebase Cloud Messaging, and our backend to deliver them. This can involve notification tokens, device identifiers, and reminder information. Notification permission is separate from analytics consent and can be changed in your device settings.</p>
+        <p>When you open a broadcaster app or website, the selected programme or channel link is passed to that provider. Its own privacy policy, account requirements, and content restrictions apply.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Service providers and international processing</h2>
+        <p>We use Google Firebase/Google Analytics and Supabase for the purposes described above. Providers may process data outside the UK, including in the United States. Applicable provider terms and transfer arrangements govern that processing. Google describes its data-processing terms and international-transfer arrangements on its <a href="https://firebase.google.com/support/privacy">Firebase privacy and security page</a>. See also <a href="https://supabase.com/privacy">Supabase's privacy policy</a>.</p>
+        <p>We do not sell your personal information. Optional analytics and crash reporting are used to improve Channel Launcher, not to require you to pay for privacy or unlock app features.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Retention and deletion</h2>
+        <p>Local preferences remain until you change them, remove the app's data, or uninstall, subject to your operating system's backup behaviour. Optional sync records are held to provide linked-device functionality; contact us to request removal. Unlinking a device is not a promise that every existing backend record or backup is immediately erased.</p>
+        <p>Analytics retention depends on the Google Analytics property's retention settings and the type of information, including whether it is an event-level record or an aggregate report. Turning collection off is not a server-side deletion request. Google states that Crashlytics retains crash traces and associated identifiers for 90 days before starting removal from live and backup systems. Firebase installation identifiers used by other services have separate retention and deletion rules. See <a href="https://firebase.google.com/support/privacy">Google's service-specific retention information</a> or contact us with questions about your data.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Your rights</h2>
+        <p>KAZYAZ is responsible for the personal information it processes for Channel Launcher. Optional analytics and crash-reporting collection is based on your consent. Where applicable under data-protection law, you may request access, correction, deletion, restriction, or portability of your personal data, object to processing, and withdraw consent. Some requests may require information to locate the relevant record because the app has no named user account. Do not send passwords or broadcaster credentials.</p>
+        <p>You may also raise a concern with the UK's <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner's Office</a>. Contacting us first does not remove that right.</p>
       </section>
 
       <section class="panel">
@@ -60,7 +95,7 @@
 
       <section class="panel">
         <h2>Your choices</h2>
-        <p>Sync is optional. You can unlink devices from Settings. To request removal of an optional sync record, contact us through the <a href="support.html">Channel Launcher support page</a>.</p>
+        <p>Analytics, crash reports, notification permissions, and device linking are separate choices. You can manage analytics and crash reports in Privacy choices, notifications in your device settings, and linked devices in Device Sync. For privacy or data-removal requests, use the <a href="support.html">Channel Launcher support page</a> or email us below.</p>
       </section>
 
       <section class="panel">
