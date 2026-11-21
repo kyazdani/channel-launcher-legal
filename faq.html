@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Answers to common questions about Channel Launcher.">
+  <title>Frequently Asked Questions - Channel Launcher</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .faq-list { display: grid; gap: 12px; }
+    .faq-list .panel { margin: 0; }
+    .faq-list summary { cursor: pointer; font-weight: 650; line-height: 1.4; }
+    .faq-list details[open] summary { margin-bottom: 12px; }
+    .faq-list details p { margin: 0; white-space: pre-wrap; }
+    .faq-list summary:focus-visible, .faq-search:focus-visible { outline: 2px solid #f064a1; outline-offset: 4px; }
+    .faq-search { display: block; margin: 6px 0 18px; width: 100%; padding: 12px; font: inherit; border-radius: 10px; color: inherit; background: #0d1b36; border: 1px solid #7584a0; }
+    .faq-tools { margin: 24px 0; }
+  </style>
+  <script type="module" src="assets/faq.mjs"></script>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Site navigation">
+      <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="34" height="34">Channel Launcher</a>
+      <div class="nav-links"><a href="support.html">Support</a><a href="faq.html" aria-current="page">FAQ</a><a href="privacy-policy.html">Privacy</a></div>
+    </nav>
+    <section class="hero compact">
+      <p class="eyebrow">Support</p>
+      <h1>Frequently Asked Questions</h1>
+      <p class="lede">Help with live TV, regional news, Watchlist and getting Channel Launcher set up on your devices.</p>
+    </section>
+    <section class="faq-tools" aria-label="Find an answer">
+      <label for="faq-search">Search questions</label>
+      <input id="faq-search" class="faq-search" type="search" placeholder="Try catch-up, region or reminders" disabled>
+      <p id="faq-status" role="status">Loading questions...</p>
+      <noscript><p>Enable JavaScript to browse the FAQ, or <a href="support.html">contact support</a>.</p></noscript>
+      <div id="faq-list" class="faq-list"></div>
+    </section>
+    <section class="panel muted">
+      <h2>Still need a hand?</h2>
+      <p><a href="support.html">Contact support</a> with your device model, Channel Launcher version and the channel or programme affected.</p>
+    </section>
+    <footer class="footer"><a href="privacy-policy.html">Privacy Policy</a><span>© 2026 KAZYAZ</span></footer>
+  </main>
+</body>
+</html>

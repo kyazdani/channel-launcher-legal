@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "provider-app-home",
+      "question": "Why does a channel open the streaming app instead of playing?",
+      "answer": "Channel Launcher shows the guide and hands playback to the provider. Some apps open straight to live TV; others ask you to sign in, choose a profile, or select Live TV. Update both apps and try the channel directly in the provider app first. If playback works there but not from Channel Launcher, tell us the channel, your device and the app versions."
+    },
+    {
+      "id": "choose-provider",
+      "question": "Can I choose which app opens a channel?",
+      "answer": "Where a channel has multiple supported routes, open Settings → Manage Channels and look for its app choice. Only the available routes for that device and channel appear. You still need the provider app and any account or subscription it requires.",
+      "bold": "Settings → Manage Channels"
+    },
+    {
+      "id": "regional-news",
+      "question": "Why is the regional news different from my TV Guide?",
+      "answer": "The region in Channel Launcher controls the listings. BBC iPlayer, ITVX and STV Player handle playback separately. Check your region or postcode in the provider app as well. If the provider itself plays the wrong bulletin, changing the guide region alone will not fix the stream."
+    },
+    {
+      "id": "catch-up",
+      "question": "Why can I see a programme but not watch it on catch-up?",
+      "answer": "A guide listing tells you when a programme aired, not whether the provider offers it on demand. Some episodes arrive later, expire, or are unavailable because of rights. A catch-up action is shown when availability is confirmed; a live-channel action opens whatever is airing now, not the earlier episode."
+    },
+    {
+      "id": "reminders",
+      "question": "Will reminders appear over another streaming app?",
+      "answer": "Channel Launcher cannot show a reminder over another app's video on your TV. On Apple TV you can enable Channel Launcher reminder badges. On iPhone or iPad, allow notifications and turn on Remind Me for the programme. Adding something to Watchlist does not necessarily turn on an alert."
+    },
+    {
+      "id": "family-sharing",
+      "question": "Can my family share the Apple purchase?",
+      "answer": "The Apple App Store listing indicates Family Sharing support. If the purchase is not showing for a family member, check that Purchase Sharing is enabled and look in the purchaser's shared App Store purchases. If the listing still asks them to pay, check with Apple before buying again. Google and Amazon purchases are separate from the Apple purchase."
+    },
+    {
+      "id": "device-compatibility",
+      "question": "Which TVs and streaming devices are supported?",
+      "answer": "Check the Channel Launcher listing in your device's app store to confirm compatibility before buying. Fire TV devices do not all run the same operating system, so support for one Fire TV model does not guarantee support for another. If the store does not show the app, send us your exact model and operating system."
+    },
+    {
+      "id": "link-devices",
+      "question": "How do I share my Watchlist and favourites across devices?",
+      "answer": "Open Settings → Device Sync on both devices. Create a link code on one, then enter it on the other before it expires. Open each app to let settings sync. Linking does not share streaming-app sign-ins or subscriptions. Unlinking stops future syncing but keeps the device's current settings.",
+      "bold": "Settings → Device Sync"
+    }
+  ]
+}
